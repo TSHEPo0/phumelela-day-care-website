@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHUMELELA DAY CARE CENTER | Premium Early Childhood Development</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Chewy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
+
+
+    <style>
+        :root {
+            --primary: #00350b;
+            --secondary: #098b10;
+            --accent: #FFE66D;
+            --dark: #2D3047;
+            --light: #F7FFF7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            overflow-x: hidden;
+        }
+
+    /*---------- Navigation---------- */
+        /* ===== Navigation Styles ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-family: 'Chewy', cursive;
+    font-size: 2rem;
+    color: var(--primary);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--secondary);
+    background: rgba(78, 205, 196, 0.1);
+}
+
+.enroll-cta .cta-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+    margin-left: 1rem;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+.hamburger-box {
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--dark);
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.hamburger-inner {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger-inner::before {
+    top: -8px;
+}
+
+.hamburger-inner::after {
+    top: 8px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0 1rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        padding: 2rem;
+        transition: right 0.3s ease;
+        align-items: flex-start;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 1rem 0;
+        font-size: 1.2rem;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .enroll-cta {
+        width: 100%;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(0,0,0,0.05);
+        display: block !important;
+    }
+
+    .enroll-cta .cta-button {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    /* Hamburger Animation */
+    .hamburger.active .hamburger-inner {
+        transform: rotate(45deg);
+        background: var(--primary);
+    }
+
+    .hamburger.active .hamburger-inner::before {
+        transform: rotate(-90deg) translateX(-8px);
+        background: var(--primary);
+    }
+
+    .hamburger.active .hamburger-inner::after {
+        opacity: 0;
+    }
+}
+
+/* Desktop Only Styles */
+@media (min-width: 769px) {
+    .enroll-cta {
+        display: block;
+    }
+    
+    .nav-menu {
+        align-items: center;
+    }
+}
+
+    /* ---------Hero Section------- */
+            .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('https://i.insider.com/59764bf52e5063c07e8b490e?width=600&format=jpeg&auto=webp') center/cover;
+            display: flex;;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 2rem;
+        }
+        .hero-content {
+            max-width: 800px;
+            animation: fadeInUp 1s ease;
+        }
+        /* Programs Grid */
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 4rem 2rem;
+        }
+        .program-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .program-card:hover {
+            transform: translateY(-10px);
+        }
+
+    
+    
+/*---------- herro setion words--------- */
+.hero-title {
+    font-family: 'Chewy', cursive;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, 
+        #00c77b 15%, 
+        #FFE66D 30%, 
+        #4ECDC4 45%, 
+        #00c77b 60%, 
+        #FFE66D 75%, 
+        #00c77b 90%
+    );
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 8s ease infinite;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+.hero-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #FF6B6B, #FFE66D, #4ECDC4);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.6s ease;
+}
+.hero:hover .hero-title::after {
+    transform: scaleX(1);
+}
+.hero-subtitle {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: var(--accent);
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    animation: subtitleEntrance 1.2s ease-out forwards;
+    transform: translateY(20px);
+    opacity: 0;
+    padding: 0.8rem 1.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.4s ease;
+}
+.hero-subtitle:hover {
+    transform: scale(1.05) skew(-3deg);
+    background: rgba(255, 255, 255, 0.25);
+}
+@keyframes gradientShift {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+}
+@keyframes subtitleEntrance {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Add floating animation */
+@keyframes float {
+    0% { transform: translateY(0px) }
+    50% { transform: translateY(-15px) }
+    100% { transform: translateY(0px) }
+}
+.hero-title {
+    animation: 
+        gradientShift 8s ease infinite,
+        float 4s ease-in-out infinite 1s;
+}
+
+
+/* -----------this is the button-------- */
+.cta-button {
+    display: inline-block;
+    padding: 1.2rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--light);
+    background: linear-gradient(135deg, var(--primary) 0%, #04b86d 100%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 10px 30px rgba(200, 230, 211, 0.329);
+    text-decoration: none;
+}
+.cta-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(255, 107, 107, 0.4);
+}
+.cta-button:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 20px rgba(255, 107, 107, 0.2);
+}
+.cta-button:hover::after {
+    transform: translateX(0);
+}
+/* Optional: Add a floating animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+.hero .cta-button {
+    animation: float 3s ease-in-out infinite;
+}
+/* Add an arrow icon using Font Awesome */
+.cta-button i {
+    margin-left: 0.8rem;
+    transition: transform 0.3s ease;
+}
+.cta-button:hover i {
+    transform: translateX(3px);
+}
+ 
+
+/* --------About Section Styling ---------- */
+.about-section {
+    padding: 8rem 2rem;
+    background: var(--light);
+}
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+.about-content {
+    position: relative;
+    z-index: 1;
+}
+.section-title {
+    font-family: 'Chewy', cursive;
+    color: var(--dark);
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    position: relative;
+    display: inline-block;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60%;
+    height: 4px;
+    background: var(--secondary);
+    border-radius: 2px;
+}
+.about-text {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+.about-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+.highlight-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+.highlight-card:hover {
+    transform: translateY(-5px);
+}
+.about-list {
+    list-style: none;
+    margin-top: 2rem;
+}
+.about-list li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: rgba(255, 107, 107, 0.05);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+/* Image Section */
+.about-image {
+    position: relative;
+    perspective: 1000px;
+}
+.image-wrapper {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+.decorative-shape {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(45deg, var(--secondary), var(--accent));
+    transform: rotate(15deg) translate(-10%, -10%);
+    z-index: 0;
+    animation: shapeFloat 8s ease-in-out infinite;
+}
+.floating-image {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    transform: rotate(3deg);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.image-wrapper:hover .floating-image {
+    transform: rotate(0deg) translateY(-10px);
+}
+.image-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background: var(--primary);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    z-index: 2;
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+    transform: rotate(5deg);
+}
+/* Animations */
+@keyframes shapeFloat {
+    0%, 100% { transform: rotate(15deg) translate(-10%, -10%); }
+    50% { transform: rotate(18deg) translate(-12%, -8%); }
+}
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .about-image {
+        order: -1;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+}
+
+/* ----------Styles for Marquee Strip Line-------- */
+.marquee-strip {
+background-color: var(--light);
+color: var(--dark);
+padding: 10px 0;
+overflow: hidden;
+white-space: nowrap;
+position: relative;
+font-weight: 600;
+font-size: 1.1rem;
+}
+.marquee-text {
+display: inline-block;
+padding-left: 40%;
+animation: marquee 50s linear infinite;
+}
+.marquee-text span {
+padding: 0 20px;
+}
+
+
+/* ===== Programs Section Styles ===== */
+.programs-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(15deg, var(--light) 60%, rgba(78, 205, 196, 0.1));
+    position: relative;
+}
+.section-title {
+    font-family: 'Chewy', cursive;
+    color: var(--dark);
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+.section-subtitle {
+    text-align: center;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.registration-notice {
+    background: var(--accent);
+    color: var(--dark);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 1rem auto 2rem;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(255, 230, 109, 0.3);
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 2rem auto 0;
+}
+.program-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+.program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+}
+.program-header {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+.program-icon {
+    color: var(--primary);
+    filter: drop-shadow(2px 2px 4px rgba(255, 107, 107, 0.2));
+    min-width: 60px;
+}
+.age-group {
+    flex: 1;
+}
+.age-badge {
+    background: var(--secondary);
+    color: white;
+    padding: 0.3rem 1.5rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.program-name {
+    font-family: 'Chewy', cursive;
+    color: var(--dark);
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+.program-features {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+.program-features li {
+    padding: 0.8rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    font-size: 0.95rem;
+}
+.program-features li:last-child {
+    border-bottom: none;
+}
+.program-features i {
+    color: var(--secondary);
+    width: 1.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.price {
+    font-weight: 800;
+    color: var(--primary);
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin-right: auto;
+}
+.program-footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.program-cta {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+.program-cta:hover {
+    background: var(--secondary);
+    transform: translateX(5px);
+}
+.program-cta::after {
+    content: '→';
+    transition: transform 0.3s ease;
+    font-weight: 700;
+}
+.program-cta:hover::after {
+    transform: translateX(5px);
+}
+/* Animations */
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.program-card {
+    animation: cardEntrance 0.6s ease forwards;
+    opacity: 0;
+}
+.program-card:nth-child(1) { animation-delay: 0.2s; }
+.program-card:nth-child(2) { animation-delay: 0.4s; }
+@media (max-width: 768px) {
+    .programs-section {
+        padding: 4rem 1rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .registration-notice {
+        font-size: 0.85rem;
+        padding: 0.8rem 1.5rem;
+        margin: 0 auto 1.5rem;
+    }
+    
+    .programs-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .program-card {
+        margin: 0;
+        padding: 1.5rem;
+    }
+    
+    .program-name {
+        font-size: 1.6rem;
+    }
+    
+    .price {
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 480px) {
+    .program-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .program-icon {
+        margin-bottom: 0.5rem;
+    }
+    
+    .program-footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .price {
+        margin-right: 0;
+    }
+}
+
+/* Curriculum Section Styles */
+
+.curriculum-section {
+    padding: 8rem 2rem;
+    background: var(--light);
+}
+
+.curriculum-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.curriculum-content {
+    position: relative;
+    z-index: 1;
+}
+
+.curriculum-text {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+/* ---------------Image Section Mirror--------------- */
+.curriculum-image .image-wrapper {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    perspective: 1000px;
+}
+.curriculum-image .decorative-shape {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(45deg, var(--primary), var(--accent));
+    transform: rotate(-15deg) translate(-10%, -10%);
+    animation: shapeFloat 8s ease-in-out infinite;
+}
+.curriculum-image .floating-image {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    transform: rotate(-3deg);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.curriculum-image .image-wrapper:hover .floating-image {
+    transform: rotate(0deg) translateY(-10px);
+}
+.curriculum-image .image-badge {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    background: var(--secondary);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    z-index: 2;
+    box-shadow: 0 10px 30px rgba(78, 205, 196, 0.3);
+    transform: rotate(-5deg);
+}
+/* Teaching Methods List */
+.methods-list {
+    list-style: none;
+    margin-top: 2rem;
+}
+.methods-list li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: rgba(78, 205, 196, 0.05);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+}
+.methods-list li:hover {
+    transform: translateX(10px);
+}
+.methods-list i {
+    color: var(--secondary);
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .curriculum-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .curriculum-image {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    
+    .floating-image {
+        height: 400px;
+    }
+    
+    .image-badge {
+        left: -10px;
+        padding: 1rem;
+    }
+}
+@keyframes shapeFloat {
+    0%, 100% { transform: rotate(-15deg) translate(-10%, -10%); }
+    50% { transform: rotate(-18deg) translate(-12%, -8%); }
+}
+
+
+/*------ Contact Form-------- */
+/* Contact Section Styles */
+.contact-section {
+    padding: 6rem 2rem;
+    background-color: rgb(0, 199, 99);
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+}
+
+.contact-content {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-subtitle {
+    color: var(--light);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.contact-info {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.info-card {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card i {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-top: 0.5rem;
+}
+
+.info-content h4 {
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+}
+.info-content p {
+    color: #666;
+    line-height: 1.6;
+}
+/* Date Input Styling */
+.date-input {
+    position: relative;
+    padding-right: 2.5rem !important;
+}
+.date-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary);
+    pointer-events: none;
+}
+/* Custom date picker styling */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    color: transparent;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+input[type="date"]::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+}
+input[type="date"]::-webkit-datetime-edit-text {
+    color: var(--dark);
+    padding: 0 0.2rem;
+}
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+/* For Firefox */
+input[type="date"]::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+/* Form Styles */
+.contact-form-wrapper {
+    position: relative;
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.form-input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.form-input:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+.form-input:focus + label,
+.form-input:not(:placeholder-shown) + label {
+    transform: translateY(-120%);
+    font-size: 0.8rem;
+    color: var(--primary);
+}
+.form-input:valid + label {
+    color: var(--secondary);
+}
+label {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    background: white;
+    padding: 0 0.5rem;
+}
+/* Map Styles */
+.map-container {
+    margin-top: 4rem;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.google-map {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .map-container {
+        margin-top: 2rem;
+        height: 300px;
+    }
+    
+    .info-card {
+        padding: 1rem;
+    }
+}
+@media (max-width: 480px) {
+    .contact-form-wrapper {
+        padding: 1.5rem;
+    }
+    
+    .form-input {
+        padding: 0.8rem;
+    }
+    
+    label {
+        font-size: 0.9rem;
+    }
+}
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">PHUMELELA</a>
+        
+        <!-- Hamburger Menu -->
+        <button class="hamburger" aria-label="Menu">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#programs" class="nav-link">Programs</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li class="enroll-cta">
+                <a href="enroll.html" class="cta-button">
+                    Enroll Now <i class="fas fa-arrow-right"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Building Bright Futures</h1>
+            <p class="hero-subtitle">Premium Early Childhood Development in a Safe, Loving Environment</p>
+            <a href="#contact" class="cta-button"> Schedule a Visit  <i class="fas fa-arrow-right"></i></a>
+            <a href="enroll.html" class="cta-button"> ENROLL YOUR KID  <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+     <!-- about Section -->
+    <section class="about-section" id="about">
+    <div class="about-container">
+        <div class="about-content">
+            <h2 class="section-title">Our Story of Nurturing Growth</h2>
+            <p class="about-text">Founded in ????, PHUMELELA DAY CARE has grown from a family passion project to an award-winning early learning center. Our Reggio Emilia-inspired approach puts children at the heart of everything we do.</p>
+            
+            <div class="about-highlights">
+                <div class="highlight-card">
+                    <i class="fas fa-star fa-2x"></i>
+                    <h4>4.9/5 Parent Rating</h4>
+                    <p>Consistently top-rated care</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-graduation-cap fa-2x"></i>
+                    <h4>Certified Educators</h4>
+                    <p>Degree-qualified teaching staff</p>
+                </div>
+            </div>
+
+            <ul class="about-list">
+                <li><i class="fas fa-check"></i>100% Safety Record</li>
+                <li><i class="fas fa-check"></i>Nutritionist-Approved Meals</li>
+                <li><i class="fas fa-check"></i>Daily Progress Updates</li>
+            </ul>
+        </div>
+
+        <div class="about-image">
+            <div class="image-wrapper">
+                <div class="decorative-shape"></div>
+                <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" 
+                     alt="Our caring team interacting with children"
+                     class="floating-image">
+                <div class="image-badge">
+                    <span>15+ Years Experience</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Marquee Strip Line 
+<div class="marquee-strip">
+    <div class="marquee-text">
+        <span>---🎉 First-time customers get 10% off their first order and Free Instalation and automations 🎉---</span>
+    </div>
+</div> --->
+
+    <!-- Programs Section -->
+    <section class="programs-section" id="programs">
+    <div class="section-container">
+        <h2 class="section-title">Our Learning Programs</h2>
+        <p class="section-subtitle">Quality childcare starting from 2 years</p>
+        <div class="registration-notice">
+            <i class="fas fa-info-circle"></i>
+            One-time registration fee: R100
+        </div>
+
+        <div class="programs-grid">
+            <!-- Toddler Program -->
+            <div class="program-card">
+                <div class="program-header">
+                    <div class="program-icon">
+                        <i class="fas fa-crayon fa-3x"></i>
+                    </div>
+                    <div class="age-group">
+                        <span class="age-badge">2-3 years</span>
+                        <h3 class="program-name">Toddler Discovery</h3>
+                    </div>
+                </div>
+                <div class="program-body">
+                    <ul class="program-features">
+                        <li><i class="fas fa-paint-brush"></i> Creative expression</li>
+                        <li><i class="fas fa-book"></i> Early literacy program</li>
+                        <li><i class="fas fa-music"></i> Music & movement</li>
+                    </ul>
+                    <div class="program-footer">
+                        <span class="price">R 550/month</span>
+                        <button class="program-cta">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preschool Program -->
+            <div class="program-card">
+                <div class="program-header">
+                    <div class="program-icon">
+                        <i class="fas fa-shapes fa-3x"></i>
+                    </div>
+                    <div class="age-group">
+                        <span class="age-badge">3-5 years</span>
+                        <h3 class="program-name">Preschool Prep</h3>
+                    </div>
+                </div>
+                <div class="program-body">
+                    <ul class="program-features">
+                        <li><i class="fas fa-flask"></i> STEM exploration</li>
+                        <li><i class="fas fa-puzzle-piece"></i> Problem solving</li>
+                        <li><i class="fas fa-globe"></i> Cultural awareness</li>
+                    </ul>
+                    <div class="program-footer">
+                        <span class="price">R 550/month</span>
+                        <button class="program-cta">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- curriculum-section -->
+    <section class="curriculum-section" id="curriculum">
+    <div class="curriculum-container">
+        <div class="curriculum-image">
+            <div class="image-wrapper">
+                <div class="decorative-shape"></div>
+                <img src="https://images.unsplash.com/photo-1617080090911-91409e3496ad?q=80&w=1464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                     alt="Children learning together"
+                     class="floating-image">
+                <div class="image-badge">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="curriculum-content">
+            <h2 class="section-title">Our Teaching Philosophy</h2>
+            <p class="curriculum-text">We combine modern educational practices with creative play to foster holistic development.</p>
+            
+            <div class="curriculum-highlights">
+                <div class="highlight-card">
+                    <i class="fas fa-brain fa-2x"></i>
+                    <h4>Cognitive Development</h4>
+                    <p>STEM activities & problem solving</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-heartbeat fa-2x"></i>
+                    <h4>Physical Growth</h4>
+                    <p>Daily motor skills activities</p>
+                </div>
+            </div>
+
+            <div class="teaching-methods">
+                <h3>Key Methodologies:</h3>
+                <ul class="methods-list">
+                    <li><i class="fas fa-check"></i>Montessori-inspired Learning</li>
+                    <li><i class="fas fa-check"></i>Emotional Intelligence Training</li>
+                    <li><i class="fas fa-check"></i>Multilingual Exposure</li>
+                    <li><i class="fas fa-check"></i>Nature-Based Exploration</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+    <div class="contact-container">
+        <div class="contact-content">
+            <h2 class="contact-subtitle"><b>Get in Touch</b></h2>
+            <p class="contact-subtitle">We'd love to hear from you! Reach out for inquiries or to schedule a visit.</p>
+            
+            <div class="contact-info">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info-content">
+                        <h4>Our Location</h4>
+                        <p>123 Sunshine Street<br>Cape Town, 8001<br>South Africa</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <div class="info-content">
+                        <h4>Operating Hours</h4>
+                        <p>Mon-Fri: 7:30 AM - 5:30 PM<br>Sat: By Appointment<br>Sun: Closed</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="info-content">
+                        <h4>Contact Numbers</h4>
+                        <p>Main: +27 21 123 4567<br>Emergency: +27 82 765 4321</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" class="form-input" required>
+                    <label for="name">Full Name</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="email" class="form-input" required>
+                    <label for="email">Email Address</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="tel" id="phone" class="form-input" required>
+                    <label for="phone">Phone Number</label>
+                </div>
+
+                <div class="form-group">
+        <input type="date" id="preferred-date" class="form-input date-input" required>
+        <label for="preferred-date">Preferred Visit Date</label>
+        <i class="fas fa-calendar-alt date-icon"></i>
+    </div>
+
+                <div class="form-group">
+                    <textarea id="message" class="form-input" rows="5" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+
+                <button type="submit" class="cta-button">
+                    Send Message <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.041614847735!2d27.9305149!3d-26.267611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95aaa8789d211f%3A0x1c8d4a7f8f0e3b0d!2s4706%20Chakane%20St%2C%20Orlando%20East%2C%20Soweto%2C%201804!5e0!3m2!1sen!2sza!4v1717424248346!5m2!1sen!2sza" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                class="google-map"></iframe>
+    </div>
+</section>
+
+
+
+ <!-------------------------------------------------- JAVA ---------------------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+    <script>
+
+      // Hamburger Menu Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    // Toggle mobile menu
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.nav-container') && navMenu.classList.contains('active')) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }
+    });
+
+    // Close menu when clicking links
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+});
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+
+        // Form validation
+        const form = document.querySelector('.contact-form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Add form validation logic
+        });
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.program-card, .price-card').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // Initialize lightGallery
+        lightGallery(document.getElementById('gallery'), {
+            selector: '.gallery-item',
+            download: false,
+            zoom: false
+        });
+    </script>
+</body>
+</html>
